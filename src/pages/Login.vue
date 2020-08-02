@@ -52,7 +52,7 @@ export default {
     },
     validate() {
       const length = this.username?.trim().length;
-      return (length <= 3 || length > 20);
+      return !(length <= 3 || length > 20);
     },
     connect() {
       this.$disconnect();

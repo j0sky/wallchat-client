@@ -20,7 +20,7 @@ Vue.use(
         store: store,
         format: 'json',
         reconnection: true,
-        reconnectionAttempts: 30,
+        reconnectionAttempts: 5,
     }
 )
 Vue.component('v-icon', Icon);

@@ -56,7 +56,7 @@ export const store = new Vuex.Store({
         },
         SOCKET_ONMESSAGE: (state, message) => {
             console.log(message)
-            if ('text' in message && 'name' in message) {
+            if ('text' in message) {
                 state.messages.push(message);
             }
         },
